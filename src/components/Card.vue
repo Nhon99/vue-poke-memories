@@ -13,8 +13,9 @@
             </div>
 
             <div class="card__face card__face--back">
-                <div class="card__content" :style="{backgroundImage: `url('@/assets/${backgroundImg}')`}">
-                </div>
+                <div class="card__content">
+                    <img :src="`/src/assets/${backgroundImg}`"/>
+                </div>  
             </div>
         </div>
     </div>
@@ -118,6 +119,13 @@
         background-repeat: no-repeat ;
         width: 100%;
         height: 100%;
+    }
+
+    .card__content img {
+        width: 100%;
+        height: 100%;
+        scale: 75%;
+        margin: auto;
     }
 
 </style>
